@@ -1,7 +1,7 @@
 ---
-name: [FEAT] 
+name: feature
 about: Suggest an idea for a new feature or enhancement
-title: ''
+title: '[FEAT]'
 labels: 'Type: Feature'
 assignees: ''
 ---
