@@ -1,5 +1,5 @@
 name: Maintenance
-description: Cleanup, refactoring, reworking of code
+description: Dependencies, Cleanup, refactoring, reworking of code
 title: "[MAINT]: "
 labels: ["Type: Maintenance", "Status: Triage"]
 assignees:
