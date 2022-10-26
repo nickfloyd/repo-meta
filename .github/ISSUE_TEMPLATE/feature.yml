@@ -1,4 +1,4 @@
-name: feature
+name: Feature
 description: Suggest an idea for a new feature or enhancement
 title: "[FEAT]: "
 labels: ["Type: Feature", "Status: Triage"]
