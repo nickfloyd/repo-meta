@@ -1,13 +1,21 @@
 ---
-name: [Docs]
+name: [DOCS]
 about: Update, add, or improve documentation
 title: ''
 labels: 'Type: Documentation'
 assignees: ''
 ---
 
-#### Describe the Need
+#### Describe the need
 
-#### Suggested Changes
+----
+
+#### Suggested changes
+
+
+----
 
 #### Provide Examples/links to GitHub docs
+
+
+----
