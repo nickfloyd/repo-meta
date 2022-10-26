@@ -1,0 +1,50 @@
+name: maintenance
+description: Cleanup, refactoring, reworking of code
+title: "[MAINT]: "
+labels: ["Type: Maintenance", "Status: Triage"]
+assignees:
+  - 
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill this out!
+  - type: textarea
+    id: describe-need
+    attributes:
+      label: Describe the need
+      description: Also tell us, whats expected/wanted?
+      placeholder: Why is this maintenance needed!
+      value: "The code needs some serious help here!"
+    validations:
+      required: true
+  - type: input
+    id: sdk_version
+    attributes:
+      label: SDK Version
+      description: Does this maintenance apply to a specific SDK version?
+      placeholder: ex. v1.1.1
+    validations:
+      required: false
+  - type: input
+    id: api_version
+    attributes:
+      label: REST API Version
+      description: Does this maintenance apply to a specific version of the GitHub REST API?
+      placeholder: ex. v1.1.1
+    validations:
+      required: false
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant log output
+      description: Please copy and paste any relevant source code or log details. This will be automatically formatted into code, so no need for backticks.
+      render: shell
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Code of Conduct
+      description: By submitting this issue, you agree to follow our [Code of Conduct](https://example.com)
+      options:
+        - label: I agree to follow this project's Code of Conduct
+          required: true

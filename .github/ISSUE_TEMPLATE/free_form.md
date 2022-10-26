@@ -1,8 +1,8 @@
 ---
-name: docs
-about: Update, add, or improve documentation
-title: '[DOCS]'
-labels: 'Type: Documentation'
+name: Free form issue
+about: For anything else
+title: '[ISSUE]'
+labels: 'Status: Triage'
 assignees: ''
 ---
 
