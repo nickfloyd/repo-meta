@@ -1,5 +1,5 @@
 ---
-name: [Maintenance]
+name: [MAINT]
 about: Cleanup, refactoring, reworking of code
 title: ''
 labels: 'Type: Maintenance'
