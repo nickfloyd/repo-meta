@@ -7,8 +7,8 @@ assignees: ''
 
 ---
 
-#### Describe the Need
+#### Describe the need
 
-#### Proposed Changes
+#### Proposed changes
 
 #### Examples
