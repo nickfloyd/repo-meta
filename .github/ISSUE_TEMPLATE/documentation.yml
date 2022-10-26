@@ -1,4 +1,4 @@
-name: docs
+name: Documentation
 description: Update, add, or improve documentation
 title: "[DOCS]: "
 labels: ["Type: Documentation", "Status: Triage"]

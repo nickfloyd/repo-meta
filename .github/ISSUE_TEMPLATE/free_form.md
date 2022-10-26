@@ -1,6 +1,6 @@
 ---
 name: Free form issue
-about: For anything else
+about: For everything else...
 title: '[ISSUE]'
 labels: 'Status: Triage'
 assignees: ''

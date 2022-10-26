@@ -1,4 +1,4 @@
-name: maintenance
+name: Maintenance
 description: Cleanup, refactoring, reworking of code
 title: "[MAINT]: "
 labels: ["Type: Maintenance", "Status: Triage"]
