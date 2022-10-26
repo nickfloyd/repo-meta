@@ -1,7 +1,7 @@
 ---
-name: [DOCS]
+name: docs
 about: Update, add, or improve documentation
-title: ''
+title: '[DOCS]'
 labels: 'Type: Documentation'
 assignees: ''
 ---
