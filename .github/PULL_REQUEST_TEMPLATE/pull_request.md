@@ -1,7 +1,7 @@
 ---
-name: [DOCS, FEAT, MAINT, DEPS, BUG]
+name: pull request
 about: 
-title: ''
+title: '[DOCS, FEAT, MAINT, DEPS, BUG]'
 labels: 
 assignees: ''
 
