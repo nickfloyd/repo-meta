@@ -1,7 +1,7 @@
 ---
-name: [MAINT]
+name: maintenance
 about: Cleanup, refactoring, reworking of code
-title: ''
+title: '[MAINT]'
 labels: 'Type: Maintenance'
 assignees: ''
 
