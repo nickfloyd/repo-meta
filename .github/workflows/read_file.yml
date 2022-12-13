@@ -10,12 +10,17 @@ jobs:
     outputs:
       matrix: ${{ steps.set-matrix.outputs.matrix }}
     steps:
-    - id: run-ls
+    - name: run-ls-default
+      shell: bash
+      run: |
+        ls
+    - name: run-ls-working
+      working-directory: ./
+      shell: bash
       run: |
         ls
     - id: set-matrix
       run: |
-        ls
         JSON=$(cat repos.json)
         echo "::set-output name=matrix::${JSON//'%'/'%25'}"
   job2:
