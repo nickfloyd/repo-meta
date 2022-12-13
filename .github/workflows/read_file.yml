@@ -11,8 +11,6 @@ jobs:
       matrix: ${{ steps.set-matrix.outputs.matrix }}
     steps:
     - run: ls
-    - working-directory: ./
-    - run: ls
     - id: set-matrix
       run: |
         JSON=$(cat repos.json)
