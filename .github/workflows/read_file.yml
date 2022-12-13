@@ -19,7 +19,7 @@ jobs:
      - id: set-matrix
        run: |
         JSON=$(cat .github/workflows/repos.json)
-        echo "::set-output name=matrix::${JSON//'%'/'%25'}"
+        echo "{matrix}={${JSON//'%'/'%25'}}" >> $GITHUB_OUTPUT
   job2:
     needs: job1
     runs-on: ubuntu-latest
@@ -30,4 +30,4 @@ jobs:
       - name: Update workflows
         shell: bash
         run: |
-         echo matrix.target_repo
+         echo ${{ matrix.target_repo }}
