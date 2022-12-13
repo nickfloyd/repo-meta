@@ -19,7 +19,7 @@ jobs:
      - id: set-matrix
        run: |
         JSON=$(cat .github/workflows/repos.json)
-        echo "{matrix}={${JSON//'%'/'%25'}}" >> $GITHUB_OUTPUT
+        echo "{matrix}=${JSON//'%'/'%25'}" >> $GITHUB_OUTPUT
   job2:
     needs: job1
     runs-on: ubuntu-latest
