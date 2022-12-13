@@ -10,15 +10,9 @@ jobs:
     outputs:
       matrix: ${{ steps.set-matrix.outputs.matrix }}
     steps:
-    - name: run-ls-default
-      shell: bash
-      run: |
-        ls
-    - name: run-ls-working
-      working-directory: ./
-      shell: bash
-      run: |
-        ls
+    - run: ls
+    - working-directory: ./
+    - run: ls
     - id: set-matrix
       run: |
         JSON=$(cat repos.json)
