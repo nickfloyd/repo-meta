@@ -1,0 +1,27 @@
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - master
+
+jobs:
+  job1:
+    runs-on: ubuntu-latest
+    outputs:
+      matrix: ${{ steps.set-matrix.outputs.matrix }}
+    steps:
+    - id: set-matrix
+      run: |
+        JSON=$(cat repos.json)
+        echo "::set-output name=matrix::${JSON//'%'/'%25'}"
+  job2:
+    needs: job1
+    runs-on: ubuntu-latest
+    strategy:
+      matrix: 
+        target_repo: ${{fromJson(needs.job1.outputs.matrix)}}
+    steps:
+      - name: Update workflows
+        shell: bash
+        run: |
+         echo matrix.target_repo
