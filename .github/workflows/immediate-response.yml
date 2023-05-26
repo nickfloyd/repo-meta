@@ -14,7 +14,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Respond to issue or PR
-        uses: peter-evans/create-or-update-comment@latest
+        uses: peter-evans/create-or-update-comment@6534843181fc2aeb7f9f1cd3cd4a7b956cada2db
         with:
           issue-number: ${{ github.event.issue.number }}
           body: |
