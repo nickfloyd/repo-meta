@@ -1,0 +1,22 @@
+name: Issue/PR response
+permissions:
+  issues: write
+  pull-requests: write
+on:
+  issues:
+    types:
+      - opened
+  pull_request:
+    types:
+      - opened
+jobs:
+  respond-to-issue:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Respond to issue or PR
+        uses: peter-evans/create-or-update-comment@latest
+        with:
+          issue-number: ${{ github.event.issue.number }}
+          body: |
+            Thank you for your submission! The GitHub SDK team has a first responder that triages issues and PRs each Monday and Friday. If you don't get a response within a week of posting, feel free to @kfcampbell or @nickfloyd and we'll catch up. You can read more about our prioritization and response process [here](https://github.com/octokit/.github/blob/main/community/prioritization_response.md#overview)!
+
