@@ -13,11 +13,14 @@ jobs:
   respond-to-issue:
     runs-on: ubuntu-latest
     steps:
+      - name: Determine issue or PR number
+        id: extract
+        run: echo "::set-output name=number::${{ github.event.issue.number || github.event.pull_request.number }}"
+
       - name: Respond to issue or PR
         uses: peter-evans/create-or-update-comment@6534843181fc2aeb7f9f1cd3cd4a7b956cada2db
         with:
-          issue-number: ${{ github.event.issue.number }}
-          pull-request-number: ${{ github.event.pull_request.number }}
+          issue-number: ${{ steps.extract.outputs.number }}
           body: |
             Thank you for your submission! The GitHub SDK team has a first responder that triages issues and PRs each Monday and Friday. If you don't get a response within a week of posting, feel free to @kfcampbell or @nickfloyd and we'll catch up. You can read more about our prioritization and response process [here](https://github.com/octokit/.github/blob/main/community/prioritization_response.md#overview)!
 
